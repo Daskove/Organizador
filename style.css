@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+header h1 {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+}
+#container-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    gap: 150px;
+}
+.container-sub {
+    border-radius: 20px;
+    background-color: brown;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 10px;
+    width: 250px;
+    height: 130px;
+    text-align: center;
+}
+.container-sub h1 {
+    border-radius: 20px;
+    background-color: brown;
+}
+.botao {
+    padding: 5px;
+    border-radius: 10px;
+
+}
+/* #container-aFazer {
+    border-radius: 20px;
+    background-color: brown;
+}
+#container-aFazer h1 {
+    padding: 10px;
+    border-radius: 20px;
+} */
