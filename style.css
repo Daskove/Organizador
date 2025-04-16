@@ -16,7 +16,8 @@ header h1 {
     justify-content: center;
     align-items: center;
     background-color: azure;
-    gap: 150px;
+    gap: 5px;
+    
 }
 .container-subResultados {
     display: flex;
@@ -28,8 +29,8 @@ header h1 {
     max-width: 500px;
     max-height: 400px;
     padding: 10px;
-    width: 250px;
-    height: 130px;
+    width: 450px;
+    height: 100%;
     text-align: center;
 }
 .container-sub h1 {
@@ -62,6 +63,7 @@ textarea {
     justify-content: center;
     align-items: start;
     width: 500px;
+    
 }
 #botao button{
     width: 100px;
@@ -73,6 +75,25 @@ textarea {
 #botaoRelatorio {
     margin-top: 20px;
     border-radius: 20px;
+}
+table {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    
+}
+tr {
+    border: 1px solid black;
+    
+}
+td {
+    border: 1px solid black;
+    padding: 3px 10px 3px 10px;
+}
+.passarTarefa {
+    color: green;
+    background-color: white;
+    font-size: 20px;
 }
 /* #container-aFazer {
     border-radius: 20px;

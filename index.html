@@ -13,38 +13,67 @@
     <main>
         <div class="conteiner-in-principal">
             <div class="container-in">
-                <label for="">Tarefa: <input type="text"></label>
-                <label for="">Data Inicio: <input type="date"></label>
-                <label for="">Prazo: <input type="date"></label>
+                <label for="">Tarefa: <input type="text" id="tarefa"></label>
+                <label for="">Data Inicio: <input type="date" id="dataInicio"></label>
+                <label for="">Prazo: <input type="date" id="prazo"></label>
             </div>
             <div class="container-in">
                 <label for="">Prioridade: 
-                    <select name="" id="">
-                        <option value="">Baixa</option>
-                        <option value="">Média</option>
-                        <option value="">Alta</option>
+                    <select name="" id="prioridade">
+                        <option value="1">Baixa</option>
+                        <option value="2">Média</option>
+                        <option value="3">Alta</option>
                     </select>
                 </label>
-                <label for="">Autor: <input type="date"></label>
+                <label for="">Autor: <input type="text" id="autor"></label>
                 <label for="">Descrição Detalhada: </label>
-                <textarea name="" id=""></textarea> 
+                <textarea name="" id="descricao" maxlength=""></textarea> 
             </div>
             <div id="botao">
-                <button>+</button>
+                <button id="botaoAdicionar" onclick="adicionarTarefa()">+</button>
             </div>
         </div>
         <div id="container-principalResultados">
             <div class="container-subResultados" id="container-aFazer">
                 <h1>A Fazer</h1>
-                <div></div>
+                <div>
+                    <table id="aFazer-resultado">
+                        <tr>
+                            <td>Tarefa</td>    
+                            <td>Prazo</td>
+                            <td>Descrição</td>
+                            <td>Autor</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            <button class="passarTarefa">-></button>
             <div class="container-subResultados" id="container-emAndamento">
                 <h1>Em Andamento</h1>
-                <div></div>
+                <div>
+                    <table id="emAndamento-resultado">
+                        <tr>
+                            <td>Tarefa</td>    
+                            <td>Prazo</td>
+                            <td>Descrição</td>
+                            <td>Autor</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            <button class="passarTarefa">-></button>
             <div class="container-subResultados" id="container-concluido">
                 <h1>Concluido</h1>
-                <div></div>
+                <div>
+                    <table id="concluido-resultado">
+                        <tr>
+                            <td>Tarefa</td>    
+                            <td>Prazo</td>
+                            <td>Descrição</td>
+                            <td>Autor</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <div>
