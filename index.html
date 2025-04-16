@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>Organizador de Tarefas</h1>
+        <div class="container-header">
+            <h1>Organizador de Tarefas</h1>
+        </div>
     </header>
     <main>
         <div class="conteiner-in-principal">
@@ -46,6 +48,8 @@
                         </tr>
                     </table>
                 </div>
+                <button class="botao-adicionar" onclick="aFazer()">Adicionar tarefa</button>
+                <button id="botaoRelatorio">Gerar relatorio CSV</button>
             </div>
             <button class="passarTarefa">-></button>
             <div class="container-subResultados" id="container-emAndamento">
@@ -60,6 +64,7 @@
                         </tr>
                     </table>
                 </div>
+                <button class="botao-adicionar" onclick="emAndamento()">Adicionar tarefa</button>
             </div>
             <button class="passarTarefa">-></button>
             <div class="container-subResultados" id="container-concluido">
@@ -73,6 +78,7 @@
                             <td>Autor</td>
                         </tr>
                     </table>
+                    <button class="botao-adicionar" onclick="concluido()">Adicionar tarefa</button>
                 </div>
             </div>
         </div>
